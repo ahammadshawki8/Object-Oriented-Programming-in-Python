@@ -98,7 +98,7 @@ print(emp_4.fullname)
 
 # we can also make a deleter in the same way.
 # if we want to delete the fullname of our employee we have to run some clean up code. so to do this,
-#we are going to do the same action as setter but instead of setter it will going to be deleter.
+# we are going to do the same action as setter but instead of setter it will going to be deleter.
 class Employee5:
     def __init__(self,first,last,pay):
         self.first=first

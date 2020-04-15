@@ -1,8 +1,8 @@
-# opp3
+# oop3
 # class methods
 
-# regular methods in a class automatically pass attribute as a argument automatically as the first arguement. By convention, we call it "self" 
-# class methods in a class automatically pass class as a arguement automatically as the first arguement. By convention, we call it cls. 
+# regular methods in a class automatically pass attribute as a argument as the first arguement. By convention, we call it "self". 
+# class methods in a class automatically pass class as a arguement as the first arguement. By convention, we call it "cls". 
 class Employee:
 
     raise_amount=1.04  
@@ -18,10 +18,10 @@ class Employee:
 
     def apply_raise(self):
         self.pay=int(self.pay*self.raise_amount)
-    # to turn a regular method into a class method, we need to add a decorator to the top called class method.
-    # this decorator altering the funcyionality of our method to where now we receive the class to our first arguement.
+    # to turn a regular method into a class method, we need to add a decorator to the top called @classmethod.
+    # this decorator altering the functionality of our method to where now we receive the class to our first arguement.
     # by convention, we called the first arguement of our class method "cls"
-    # we cant use the class as our first argument here, becausethe word has a different meaning inthis language.
+    # we cant use the class as our first argument here, because the word has a different meaning in this language.
     @classmethod 
     def set_raise_amt(cls,amount): 
        cls.raise_amount=amount
@@ -33,7 +33,7 @@ emp2=Employee("cristiano","ronaldo",400)
 
 Employee.set_raise_amt(1.05)# changing the raise_amount
 # this wiil change all raise_amount both class and object.
-# this happens because we ran this sat_raise_amt method which is a class method which means now we are working with class instead of the object.
+# this happens because we ran this set_raise_amt method which is a class method which means now we are working with class instead of the object.
 # and we are setting that class variable raise amount equal to the amount that we passed in here which is 1.05.
 
 # what we have done here is the same thing of saying-
@@ -51,7 +51,7 @@ print(emp2.raise_amount)
 emp_str_1 ="john-doe-700"
 emp_str_2 ="steve-smith-800"
 emp_str_3 ="sergio-ramos-900"
-# we have three strings here that are employees separated by hypens.
+# we have three strings here that are employees separated by hyphens.
 
 # if we want to crete new objects with this string we have to first split on the hyphen-
 first, last, pay =emp_str_1.split("-")
@@ -59,7 +59,7 @@ new_emp1=Employee(first,last,pay)
 print(new_emp1.pay)
 # but this takes much code and time.
 # so lets create an alternative constructer that allows us to pass in the string and we can create the employee.
-# so lets create a new class method and we are going to use that metod as an alternative constructer.
+# so lets create a new class method and we are going to use that method as an alternative constructer.
 
 class Employee2:
     raise_amount=1.04  
@@ -85,3 +85,10 @@ emp_str_3 ="sergio-ramos-900"
 
 new_emp1=Employee2.form_string(emp_str_1)
 print(new_emp1.pay)
+
+# characteristics of class methods:
+#1. we need to add decorator @classmethod on the top of the class method.
+#2. we need to add cls as the first arguement of the class method.
+#3. we should use cls inside the class method.
+#4. Outside the class, we should call the class method with the class name.
+#5. we can use class method as alternative constructor.

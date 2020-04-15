@@ -1,4 +1,4 @@
-# opp1(object oriented programming)
+# oop1(object oriented programming)
 # classes and objects
 
 # what is an object?

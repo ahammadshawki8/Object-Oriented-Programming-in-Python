@@ -1,4 +1,4 @@
-# opp6
+# oop6
 # special/magic/dunder methods
 
 # there are some methods in python we can use within our classes.
@@ -29,7 +29,6 @@ print(emp_1)
 # so dunder init means __init__
 
 # so lets look some other common special methods.
-# dunder str is meant to be more of a readable representation of an object and is used as a display to the end_user.
 class Employee2:
     raise_amount=1.05
     def __init__(self,first,last,pay):
@@ -41,7 +40,7 @@ class Employee2:
         return f"{self.first} {self.last}"
     def apply_raise(self):
         self.pay =self.pay*self.raise_amount
-    def __repr__(self):# repr is meant to be an anambiguous representation of the object and should be used for debugging ang logging and things like that.
+    def __repr__(self):# repr is meant to be an ambiguous representation of the object and should be used for debugging ang logging and things like that.
         return "Employee('{}','{}','{}')".format(self.first,self.last,self.pay)
     def __str__(self):# str is meant to be more of a readable representation of an object and is used as a display to the end_user.
         return f"{self.fullname()} - {self.email}"
@@ -54,7 +53,7 @@ emp_3=Employee2("ahammad","shawki",10000)
 emp_4=Employee2("cristiano","ronaldo",20000)
 
 print(emp_3)
-# now it returned a string that we specified in the repr method.
+# now it returned a string that we specified in the __repr__ method.
 # so if we wanted to recreate this we can just copy our output.
 # and its the exact same thing that we used to make our object.
 
@@ -73,7 +72,7 @@ print(emp_3.__str__())
 # so print(emp_3) first execute dunder str.
 # if there is no dunder str it will run dunder repr.
 # if there is no dunder repr it will then run that ugly message.
-# so its a good habit thet if we create dunder str , we should create dunder repr in our class too.
+# so its a good habit thet if we create dunder str, we should create dunder repr in our class too.
 
 # there are also many magic methods in arithmatic.
 print(1+2)
@@ -84,11 +83,11 @@ print(int.__add__(1,2))# here int is a default object.
 print("a"+"b")
 print(str.__add__("a","b"))
 
-# we can also add the salaries of our  employees by dunder add.
+# we can also add the salaries of our employees by dunder add.
 # remember that though this methods are available for our code, but thats not available for our class by default.
 # so in order to make them available for our class and objects we need to do some additional coding.
 # if we do not do so our code will give us error.
-print(emp_3+emp_4)# to add this we need to use + instead of , 
+print(emp_3+emp_4)# to add this we need to use + instead of "," 
 
 # there also many dunder methods.
 # we can find them in this description "https://docs.python.org/3/references/datamodel.html#special-method-names"

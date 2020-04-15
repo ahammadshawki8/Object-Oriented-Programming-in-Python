@@ -1,8 +1,8 @@
-# opp4
+# oop4
 # static method
 
-# regular methods in a class automatically pass attribute as a argument automatically as the first arguement. By convention, we call it "self" 
-# class methods in a class automatically pass class as a arguement automatically as the first arguement. By convention, we call it cls.
+# regular methods in a class automatically pass attribute as a argument as the first arguement. By convention, we call it "self" 
+# class methods in a class automatically pass class as a arguement as the first arguement. By convention, we call it cls.
 # static methods in a class don't pass any arguement automatically. They pass neither the attribute nor the class.
 # static function behave just like regular functions except we include them in our class because they have some logical connections with the class.
 
@@ -35,14 +35,16 @@ class Employee:
     @staticmethod # to create a static method we need to use this decorator
     def workday(day):
         if day.weekday()==5 or day.weekday()==6: # in python monday is numbered 0, sunday is numbered 6 and so on.
-            return False                         # here day.weekday() function is used to refer to days of the week in thw function.
-        return True
+            return False                         # here day.weekday() function is used to refer to days of the week in the function.
+        else:
+            return True
 
 emp1=Employee("ahammad","shawki",1000)
 emp2=Employee("shakil","abrar",2000)
 
 import datetime
-my_date=datetime.date(2016,7,10)# this function makes our date readable for python.
+my_date=datetime.date(2016,7,10)# this function makes our date read-able for python.
+#or my_date=datetime.datetime.strptime("2016,7,10","%Y,%m,%d").date()
 print(Employee.workday(my_date))# we need to write Employee before calling static method.
 
 # how to be sure that it is a class method or a static method?

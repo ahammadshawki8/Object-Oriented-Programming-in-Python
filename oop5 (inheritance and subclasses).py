@@ -1,9 +1,9 @@
-# opp5
+# oop5
 # inheritance and subclasses.
 
 # inheritance allows us to inherit attributes and methods from a parent class. 
 # this is useful because we can create subclasses and get all the functionalitiey of our parent class,
-# and then we can overwrite or add completely new functionality without affecting parent class.
+# and then we can overwrite or add completely new functionality without affecting the parent class.
 
 # now lets create different types of employees.
 # lets say we wanted to create developers and managers.
@@ -51,9 +51,9 @@ print(dev_2.email)
 #print(help(Developer))
 # here we can see that-
 """Method resolution order:
-Developer
-Employee      
-builtins.object"""
+    Developer
+    Employee      
+    builtins.object"""
 # so when we create a new developer object it first look in our developer subclass for constructer.
 # if it didn't find it there then search in the Employee parent class.
 # if it didn't find it there also the last place that it would have looked is this bulitins.object class.
@@ -101,8 +101,8 @@ class Developer3(Employee):
 # so in order to let our parentclass to handle previous attribute, we can write-
 # super().__init__(first,last,pay)
 # here super is a function which allows us to do this.
-# in the brackets after init we dont have to write self as our first arguement.
-# now we handled the prog_lang just like old tecnic.
+# in the brackets after init we dont have to write "self" as our first arguement.
+# now we have handled the prog_lang just like old tecnic.
 
 dev_5=Developer3("luca","modrich",300,"ruby")
 dev_6=Developer3("neymar","jr.",900,"java")
@@ -138,7 +138,7 @@ man_1.add_emp(dev_3)
 man_1.remove_emp(dev_1)
 man_1.print_emp()
 
-# so now we know thw importance of subclass?
+# so now we know the importance of subclass?
 # => here the code for all of our developers and managers is specific.
 # => and they dont create problem with each other.
 # => and we can inherit all the properties of parent class to our subclass by a single line of code.
@@ -146,7 +146,7 @@ man_1.print_emp()
 
 # python has two buit_in function called isinstance and issubclass.
 
-# is instance will tell us if an object is an instance of a class.
+# is instance will tell us if an object is an instance/object of a class.
 print(isinstance(man_1,Manager))
 print(isinstance(man_1,Employee))
 print(isinstance(man_1,Developer))

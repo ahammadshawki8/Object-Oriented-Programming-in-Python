@@ -1,4 +1,4 @@
-# opp_extra 
+# oop_extra 8
 # combining multiple classes and object.
 class Robot :
     def __init__(self,name,color,weight):
@@ -7,13 +7,13 @@ class Robot :
         self.weight=weight
 
     def introduce_self(self):
-        print("My name is "+ self.name)
+        return "My name is "+ self.name
 
 r1=Robot("Tom","red",30)
 r2=Robot("Jerry","blue",40)
 
-r1.introduce_self()
-r2.introduce_self()
+print(r1.introduce_self())
+print(r2.introduce_self())
 
 class Person :
     def __init__(self,name,personality,isSitting):
@@ -34,5 +34,5 @@ p1.robotOwened=r2
 p2.robotOwened=r1
 
 # now we can access this robotOwned atrribute in p1/p2 object.
-p1.robotOwened.introduce_self()
-p2.robotOwened.introduce_self()
+print(p1.robotOwened.introduce_self())
+print(p2.robotOwened.introduce_self())
