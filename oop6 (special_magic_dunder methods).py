@@ -98,3 +98,41 @@ print("shawki".__len__())
 # we can apply this to our class.
 print(len(emp_3))
 # it is useful when someone writing a document and needs too know how many characters the employees name will take up.
+
+
+# lets see some other magic methods.
+# __len__         len()
+# __add__         +
+# __sub__         -
+# __mul__         -
+# __truediv__     /
+# __floordiv__    //
+# __mod__         %
+# __pow__         **
+# __and__         &
+# __xor__         ^
+# __import__      |
+# __lt__          <
+# __le__          <=
+# __eq__          ==
+# __ne__          !=
+# __gt__          >
+# __ge__          >=
+# __getitem__
+# __setitem__
+# __delitem__
+# __iter__
+# __next__
+# __name__
+# __main__
+# __contains__
+# __doc__
+# __iadd__        +=
+# __isub__        -=
+# __imul__        *=
+# __idiv__        /=
+# __imod__        %=
+
+# we have lots and lots more dunder methods in python. we have said earliar and saying again go to that link.
+# "https://docs.python.org/3/references/datamodel.html#special-method-names"
+# or we can goolge it.

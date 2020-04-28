@@ -131,3 +131,8 @@ print(emp_5.fullname)
 # deleter code is useful if we want delete an attribute.
 del emp_5.fullname
 # when we run this code it set our first and last attribute to none value.
+
+# property decorator are also use to make an attribute read-only.
+# if we there is a method in the class with the same name of an attribute,
+# then if we use property decorator and run that, the function will be executed not the attribute.
+# so the attribute become an read_only attribute. 

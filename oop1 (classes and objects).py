@@ -1,4 +1,17 @@
 # oop1(object oriented programming)
+
+# there are 3 styles in programming.
+# 1. Imperative : doing programming with diffferent loops, if/else statement and general basics.
+# 2. Functional : doing programming with pure, higher order, recursive and all types of functions.
+# 3. Object oriented: doing programming with classes and objects.
+
+# OUTSIDE OF THE TOPIC:
+# pure function is the type of function which didnt effect any out code of the function. exp: adding calculater
+# impure function is the type of function which effect any out code of the function. exp:appending to a list
+# higher order function is the type of function which either take a function as an arguement or return
+# a function as their return value is called a higher order function. exp:map,filter
+
+
 # classes and objects
 
 # what is an object?

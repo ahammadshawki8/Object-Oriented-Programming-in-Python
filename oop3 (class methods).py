@@ -92,3 +92,4 @@ print(new_emp1.pay)
 #3. we should use cls inside the class method.
 #4. Outside the class, we should call the class method with the class name.
 #5. we can use class method as alternative constructor.
+
