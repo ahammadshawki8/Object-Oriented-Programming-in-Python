@@ -159,3 +159,83 @@ print(issubclass(Manager,Employee))
 print(issubclass(Manager,Developer))
 # here we need to enter two arguement.
 # first one is the subclass and the second is the parent class.
+
+
+# Extra tip:
+# types of inheritance:
+# single:
+    # when a inheritance involves one child class and one parent class only.
+# multiple:
+    # when a inheritance involves more than one parent class.
+# multilevel:
+    # the child class acts as a parant class for another parent class.
+# hierarchical:
+    # it involvs multiple hybrid inheritance form the same parent class. it spreads like a tree.
+# hybrid:
+    # it involves more than one type of inheritance. 
+
+# code:
+# single:
+class Parent:
+    def func1(self):
+        print("A function from the parent class")
+
+class Child(Parent):
+    def func2(self):
+        print("A function from the child class")
+
+# multiple:
+class Parent1:
+    def func3(self):
+        print("A function from the parent1 class")
+
+class Parent2:
+    def func4(self):
+        print("A function from the parent2 class")
+
+class Child1(Parent1, Parent2):
+    def func5(self):
+        print("A function from the child1 class")
+
+# multilevel:
+class Parent3:
+    def func6(self):
+        print("A function from the parent3 class")
+
+class Child2(Parent3):
+    def func7(self):
+        print("A function from the child2 class")
+
+class Child3(Child2):
+    def func8(self):
+        print("A function from the child3 class which is a of child2 class")
+
+# hierarchical(basic):
+class Parent4:
+    def func6(self):
+        print("A function from the parent4 class")
+
+class Child4(Parent4):
+    def func7(self):
+        print("A function from the child4 class")
+
+class Child5(Parent4):
+    def func8(self):
+        print("A function from the child5 class")
+
+# hierarchical(hybrid):
+class Parent5:
+    def func9(self):
+        pass
+
+class Child6(Parent5):
+    def func10(self):
+        pass
+
+class Child7(Parent5):
+    def func11(self):
+        pass
+
+class Child8(Child6,Child7):
+    def func12(self):
+        pass

@@ -43,8 +43,11 @@ class H(G):
 object_H=H()
 object_H.num()
 
+# NOTE: in the previous example of super() method we have changed the functionality of a method of parent class in the child class.
+# in programming, this is called "Method Over-riding" simmilar to the operator overloading.
+
 # tip 3
-# operator oveloading
+# operator overloading
 # we see how differnt operators work in python. they are nothing but dunder methods.
 # we can actually change the characteristics in python.
 # it is called operator overloading.
@@ -131,7 +134,7 @@ l1._show()
 # so they remain private.
 
 # strongly private
-# when we use double underscore(_-) before an attribute or methods name, we are saying that they are strongly private.
+# when we use double underscore(__) before an attribute or methods name, we are saying that they are strongly private.
 # python change their name little bit. so we cant access them from the outside.
 
 # mainly, it doesn't done for resisting the access.
