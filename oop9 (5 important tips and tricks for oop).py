@@ -151,4 +151,11 @@ a.print_num()
 # but we can still access the attribute like this. _classname__attributename
 print(a._Make__cake)
 # actually, python make the change to its name.
+
+# why is encapsulation and data hiding important?
+# it is important because it gives one programmer freedom to omplement the details of the component,
+# without concern that other programmer will be writing code that intricately depends on those internal decisions.
+
+# it means programmers wont have to worried about that someone will change the private properties of that class in future
+# so that it become unsuable.
  
