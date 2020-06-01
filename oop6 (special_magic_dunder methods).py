@@ -99,6 +99,8 @@ print("shawki".__len__())
 print(len(emp_3))
 # it is useful when someone writing a document and needs too know how many characters the employees name will take up.
 
+# so we see that in python all operation have a top level function like len or add.
+# and the top level functions are surrounded by __ 
 
 # lets see some other magic methods.
 # __len__         len()
@@ -126,6 +128,7 @@ print(len(emp_3))
 # __name__
 # __main__
 # __contains__
+# __call__        x()
 # __doc__
 # __iadd__        +=
 # __isub__        -=

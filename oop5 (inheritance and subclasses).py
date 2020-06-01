@@ -160,6 +160,14 @@ print(issubclass(Manager,Developer))
 # here we need to enter two arguement.
 # first one is the subclass and the second is the parent class.
 
+# there is also an important function called hasatter().
+# it is used to see if a class or a object has certain properties or not.
+# for example, if we want to see if Manager class has the add_emp() method or not, we can-
+print(hasattr(Manager,"add_emp")) # NOTE: we have to pass the name of the property in string.
+# we can also use this method with object instead of class,
+print(hasattr(man_1,"remove_emp"))
+
+
 
 # Extra tip:
 # types of inheritance:
