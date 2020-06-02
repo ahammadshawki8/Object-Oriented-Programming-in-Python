@@ -81,6 +81,9 @@ print(c.FUNC())
 # metaclass is nice when we are writting library code and we want user code to be very specific.
 # when user codes classes are inheritting form a specific class situated in the library code,
 # we can force them or tell them to initialize certain methods in that class so that our code doesn't crash.
+# actually, in every example of metaclass we will see that,
+# there is a parent class and some subclasses 
+# and we want to control the behaviours of subclasses without explicitely writing code in them. 
 
 # again there are more complex topics in metaclass. we can see them in the python documentaion.
 # we dont need to use them much. we should use them when we are 101% sure about what we are doing.
