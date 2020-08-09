@@ -1,3 +1,5 @@
+![Poster](https://github.com/ahammadshawki8/Object-Oriented-Programming-in-Python/blob/master/oop.jpg)
+
 # Object oriented approach is one of the best ways of coding
 
 Python is a great programming language that supports OOP. You will use it to define a class with attributes and methods, which you will then call. Python offers a number of benefits compared to other programming languages like Java, C++ or R. It's a dynamic language, with high-level data types.
