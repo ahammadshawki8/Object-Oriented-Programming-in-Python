@@ -6,7 +6,7 @@ Python is a great programming language that supports OOP. You will use it to def
 After learning the stuffs in this repository, coders will have a good command over oop approach of python, they will get femiliar with the basics of OOP and beyond the basics.
 
 
-# _I am grateful to the following materials which help me to create this repository:_
+# _I am grateful to the following materials which helped me to create this repository:_
 
 Books:
   1. Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code - (Zed Shaw) 
