@@ -10,10 +10,10 @@ After learning the stuffs in this repository, coders will have a good command ov
 
 Books:
   1. Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code - (Zed Shaw) 
-  2. https://www.amazon.com/Learn-Python-Hard-Way-Introduction/dp/0321884914 
-  3. Python Notes for Professionals https://books.goalkicker.com/PythonBook/ 
-  4. Data Structures and Algorithms in Python - (Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser) 
-  5. https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275#:~:text=This%20all%2Dnew%20Data%20Structures,that%20is%20clear%20and%20concise.
+  https://www.amazon.com/Learn-Python-Hard-Way-Introduction/dp/0321884914 
+  2. Python Notes for Professionals https://books.goalkicker.com/PythonBook/ 
+  3. Data Structures and Algorithms in Python - (Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser) 
+  https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275#:~:text=This%20all%2Dnew%20Data%20Structures,that%20is%20clear%20and%20concise.
 
 Video Tutorials:  
   1. Corey Schafer (@CoreyMSchafer) - https://www.youtube.com/user/schafer5 
