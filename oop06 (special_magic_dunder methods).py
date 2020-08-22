@@ -100,7 +100,7 @@ print(len(emp_3))
 # it is useful when someone writing a document and needs too know how many characters the employees name will take up.
 
 # so we see that in python all operation have a top level function like len or add.
-# and the top level functions are surrounded by __ 
+# and the top level functions are surrounded by __ which allows us to implement those top level functions.
 
 # lets see some other magic methods.
 # __len__         len()
